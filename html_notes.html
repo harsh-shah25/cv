@@ -1,0 +1,85 @@
+<!DOCTYPE html>                 <!--It tells browser which version of HTML is used for the below code-->
+<html lang="en">                <!--It tells the programmer which language (here English) is used while writing the below code-->
+<head>                          <!--It contains the info that is hidden from the user-->
+    <meta charset="UTF-8">      <!--It tells the browser which charset to be used while displaying the contents-->
+    <title>Document</title>     <!--This title is visible on the tab of our website-->
+</head>
+<body>                                  <!--It contains the contents that is shown on the website -->
+    
+    <p>This is a paragraph</p>          <!--To write a paragraph-->
+    <hr>                                <!--To display a horizontal line-->
+    <br>                                <!--To leave a line (like '\n')-->
+    <h1>This is level 1 heading</h1>    <!--To display level 1 heading(Largest) -->
+    <h6>This is level 6 heading</h6>    <!--To display level 6 heading(Smallest)-->
+    <em>This is italicized</em><br>     <!--To italicize text-->
+    <strong>This is bold</strong><br>   <!--To display text in bold-->
+
+    <!--Lists-->
+
+    <ol>                                <!--To display an ordered list(list with numbering/alphabets/roman numerals)-->
+        <li>First item</li>             <!--For providing the items of the list-->
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+
+    <ul>                                <!--To display an unordered list(list with bullets)-->
+        <li>First item</li>             
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+
+    <!--/Lists-->
+
+    <img src="profile photo.jpg" alt="harsh shah">          <!--To display an image with given source path
+                                                            in case the img is not present at given path 
+                                                            alt. text will be displayed in place it-->
+    <br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">Anchor tag</a>    
+                                                            <!--To provide a hyperlink to the given web address.
+                                                            The text between the opening and closing tags is 
+                                                            displayed on the webpage in blue/purple colour-->
+
+    <!--Tables-->
+    <table>                                                 <!--To display content in table format-->
+        <thead>                                             <!--(not mandatory)To provide useful semantic information about column heading
+                                                                that can be used when rendering for either screen or printer.-->
+            <tr>                                            <!--To add a row in the table-->
+                <th>Column0</th>                            <!--To add the heading in bold style-->
+                <th>Column1</th>
+            </tr>                                
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cell[0,0]</td>                          <!--To add data item in a row-->
+                <td>Cell[0,1]</td>
+            </tr>
+            <tr>
+                <td>Cell[1,0]</td>
+                <td>Cell[1,1]</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <!--Forms-->
+
+    <form action="">                        <!--To make a form. The action attr. has various uses.-->
+        <label for="name">Name :</label>            <!--For labelling the input. The 'for' attr. helps in identifying the input box for 
+                                                    the given label, if we click on the label the it's corresponding input box will be activated-->
+        <input type="text" id="name"><br>           <!--To take 'text' input from the user. 'id' attr. helps in uniquely identifying an element -->
+        <input type="submit"><br>                   <!--To display a 'submit' button-->
+        <input type="color"><br>                    <!--To provide a colour pallette to give a 'colour' as a input-->
+        <input type="password"><br>                 <!--To take text input in hidden form(password form) -->
+        <input type="checkbox"><br>                 <!--To provide a checkbox for input-->
+        <input type="radio"><br>                    <!--To provide a radio button for input-->
+        <input type="file"><br>                     <!--To upload a file for input-->
+        <input type="date"><br>                     <!--To provide a date picker to input date-->
+        <input type="range"><br>                    <!--To provide a slider to take input-->
+        <!--There are various other input types too-->
+
+        <textarea name="" id="" cols="20" rows="10">Textarea</textarea>     <!--To take long paragraph as input. The specified cols and rows are 
+                                                                            default and can be changed by user-->
+    </form>
+
+
+</body>
+</html>
